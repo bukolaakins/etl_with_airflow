@@ -20,8 +20,6 @@ The pipeline runs at midnight on the first day of every month.
 
 ```
 airflow_etl/
-├── config/
-│   └── conn_string.json        # ClickHouse connection details (you create this)
 ├── dags/
 │   ├── newyorktrip_etl_dag.py  # Tells Airflow when and how to run the pipeline
 │   └── newyorktrip_etl.py      # The actual ETL logic (connect, query, save)
